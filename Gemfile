@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'devise', '~> 4.1', '>= 4.1.1'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+

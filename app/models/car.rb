@@ -1,4 +1,7 @@
 class Car < ActiveRecord::Base
+
+	searchkick
+	
 	belongs_to :user
 	has_many :reviews
 	

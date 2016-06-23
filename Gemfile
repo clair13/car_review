@@ -46,4 +46,5 @@ end
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'searchkick', '~> 1.3'
 

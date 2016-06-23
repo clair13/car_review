@@ -2,6 +2,15 @@ class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
+  def search
+    if params[:search].present?
+      @cars = Car.search(params[:search])
+    else
+      @cars = Car.all
+    end
+    
+  end
+
   def index
     @cars = Car.all
   end

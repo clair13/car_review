@@ -1,0 +1,9 @@
+<div class="row">
+  <% @cars.each do |car| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <%= link_to (image_tag car.image.url(:medium), class: 'image'), car %>
+      </div>
+    </div>
+  <% end %>
+</div>

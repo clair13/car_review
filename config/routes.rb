@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  
   devise_for :users
-  resources :cars
+  
+  resources :cars do
+    resources :reviews, except: [:show, :index]
+  end
 
   root 'cars#index'
   # The priority is based upon order of creation: first created -> highest priority.
